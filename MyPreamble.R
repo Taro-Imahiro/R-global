@@ -6,16 +6,11 @@ gc();  gc();
 # Ensures the package "pacman" is installed
 if (!require("pacman")) install.packages("pacman")
 # load packages
-pacman::p_load(dygraphs,
+pacman::p_load(
              tidyverse,
-             esquisse,
-             radiant,
              rstudioapi,
-             gtsummary,
-             flextable,
-             officer,
-             mschart,
-             ggthemes)
+             gtsummary
+             )
 #####################################################
 # For reproducibility. It is good to use it with rmarkdown etc.
 SI <- sessionInfo()

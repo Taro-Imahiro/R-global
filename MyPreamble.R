@@ -17,5 +17,8 @@ pacman::p_load(dygraphs,
              mschart,
              ggthemes)
 #####################################################
+# For reproducibility. It is good to use it with rmarkdown etc.
+SI <- sessionInfo()
+# set current directory as wd
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 getwd()

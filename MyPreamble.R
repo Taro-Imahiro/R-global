@@ -17,3 +17,5 @@ SI <- sessionInfo()
 # set current directory as wd
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 getwd()
+set.seed(25)
+plot.new()
